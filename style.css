@@ -1,0 +1,364 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  --primary-color: #a855f7;
+  --primary-color-dark: #9333ea;
+  --secondary-color: #ca8a04;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --extra-light: #faf5ff;
+  --max-width: 1200px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.bg-container {
+  height: 100vh;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  z-index: 99;
+}
+
+.nav__content {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav .logo a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--primary-color);
+  transition: 0.3s;
+}
+nav .logo a:hover {
+  color: var(--primary-color-dark);
+}
+
+nav .checkbox {
+  display: none;
+}
+
+nav input {
+  display: none;
+}
+nav .checkbox i {
+  font-size: 2rem;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  transition: left 0.3s;
+}
+
+ul li a {
+  padding: 0.5rem 1rem;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+ul li a:hover {
+  border-top-color: var(--secondary-color);
+  border-bottom-color: var(--secondary-color);
+  color: var(--secondary-color);
+}
+
+.section {
+  background-color: var(--extra-light);
+}
+
+.section__container {
+  min-height: 100vh;
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subtitle {
+  letter-spacing: 2px;
+  color: var(--text-light);
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 3rem;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.title span {
+  font-weight: 600;
+}
+
+.description {
+  line-height: 1.5rem;
+  color: var(--text-light);
+  margin-bottom: 2rem;
+}
+
+.image {
+  display: grid;
+  place-items: center;
+}
+
+.image img {
+  width: min(25rem, 90%);
+  border-radius: 100%;
+}
+.hr-line {
+  width: 100vw;
+  color: #1f2937;
+}
+.service-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.developer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #bbbfca;
+  margin: 20px;
+  border-radius: 10px;
+}
+.dev-head {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--primary-color);
+  margin: 10px 20px;
+}
+.dev-desc {
+  text-align: center;
+  font-size: 17px;
+  color: var(--text-light);
+  padding: 20px;
+}
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(208, 53, 216);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: 20px 0px;
+  border: none;
+}
+.what-we-do-sec {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.do-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+.group-soft-img {
+  align-self: center;
+  width: 70%;
+  height: 90%;
+  margin: 10px 25px;
+  border-radius: 8px;
+}
+.do-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.do-con1 {
+  background-color: #bcc5d1;
+  margin: 20px 5px;
+  padding: 20px;
+  border-radius: 6px;
+}
+.what-we-do-head {
+  text-align: center;
+  font-weight: 500;
+  font-size: 50px;
+  color: aquamarine;
+}
+.do-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #a855f7;
+}
+.do-disc {
+  font-size: 17px;
+  color: var(--text-light);
+}
+.contact-head {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: rgb(149, 29, 180);
+}
+.contact-head-2 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+}
+.inputs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.input1 {
+  height: 30px;
+  width: 30%;
+  margin: 20px;
+}
+.textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-area {
+  width: 60%;
+  align-self: center;
+}
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-btn {
+  align-self: center;
+  width: 40vw;
+  height: 20px;
+  margin: 10px;
+  border-radius: 16px;
+  border: none;
+  background-color: #a855f7;
+  color: white;
+}
+.contact-through {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.email {
+  align-self: center;
+  font-size: 20px;
+  color: #3a3b3c;
+}
+.call {
+  align-self: center;
+  font-size: 20px;
+  color: #3a3b3c;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+.footer-head {
+  text-align: center;
+  font-size:16px;
+  color: rgb(149, 29, 180);
+}
+
+@media (width < 750px) {
+  nav .checkbox {
+    display: block;
+  }
+
+  ul {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 85px);
+    left: -100%;
+    top: 85px;
+    background-color: var(--extra-light);
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+  }
+
+  nav #check:checked ~ ul {
+    left: 0;
+  }
+
+  ul li a {
+    font-size: 1.25rem;
+  }
+
+  .section__container {
+    padding: 10rem 1rem 5rem 1rem;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .image {
+    grid-area: 1/1/2/2;
+  }
+  .service-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .what-we-do-sec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .do-content {
+    width: 90%;
+  }
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
